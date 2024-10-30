@@ -25,4 +25,9 @@ public class PlayerTest {
 		player.reduceHealth(50);
 		assertFalse(player.isAlive());
 	}
+	@Test
+	public void testIsAliveHealthOne() {
+	  Player player = new Player(1, 10, 20);
+	  assertTrue(player.isAlive());
+	}
 }
